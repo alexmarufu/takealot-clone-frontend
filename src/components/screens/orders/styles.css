@@ -1,0 +1,59 @@
+.product {
+    margin-right: 40px;
+    box-shadow:  1px 1px 1px 1.5px #a8a4a4;
+    border-radius: 2px;
+    padding: 10px;
+
+}
+
+.border {
+    border: 1px solid #a8a4a4;
+    margin:  18px;
+    padding: 20px;
+    box-shadow:  1px 1px #a8a4a4;
+    border-radius: 2px;
+    width: 1200px;
+}
+
+
+.sideprice {
+    margin-right: 50px;
+    margin-top: 18px;
+    border: 1px solid #a8a4a4;
+    box-shadow:  1px 1px #a8a4a4;
+    border-radius: 2px;
+    padding: 10px;
+    
+}
+
+
+.button{
+    padding: 8px;
+    width: 250px;
+    background-color: #1c8644;
+    cursor: pointer;
+}
+
+
+.hr {
+    border: 1px solid #dbdbdb;
+}
+
+.product-border {
+    border: 1px solid #a8a4a4;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.order-details-button {
+    padding: 10px;
+    border: 1px solid #252525;
+    background-color: white;
+    border-radius: 3px;
+}
+
+
+.smalltext{
+    font-size: 10px;
+}

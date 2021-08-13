@@ -1,0 +1,124 @@
+div .inputContainer {
+    display: flex;
+     padding-top: 10px;
+     padding-bottom: 15px;
+     align-items: center;
+     margin-right: 200px;
+     margin-left: 200px;
+    justify-content: center, 
+}
+
+.inputBox {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+   
+}
+
+.search-icon{
+    padding: 9px;
+    padding-left:20px; 
+    padding-right:20px; 
+    background-color: #3a3939;
+    color: white;
+    width: 20px; 
+    border-bottom-right-radius: 5px;
+    border-top-right-radius:5px;
+    cursor: pointer;
+}  
+
+.search-icon:hover {
+    background-color: #202020;
+}
+
+.navIcon {
+    display: none;
+}
+
+.cart {
+    margin-right: 200px;
+}
+
+@media (min-width: 768px) {
+    .navIcon{
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    div .inputContainer {
+        margin-right: 20px;
+        margin-left: 20px;
+     }
+
+    .navIcon{
+        display: block;
+    }
+
+   div .logo2{
+        width: 150px;
+        height: 80px;
+        margin: 0;
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+
+    div .menulinks {
+        margin: 0;
+    }
+    .navName{
+        display: none;
+    }
+    div .mainbar {
+        justify-content: space-between;
+    }
+    .cart {
+        margin: 0;
+    }
+    
+}
+
+
+.logo{
+    width: 190px;
+    height: 100px;
+    margin-left: 200px; 
+}
+
+.logo2 {
+    width: 190px;
+    height: 100px;
+    margin-left: 200px; 
+    display: none;
+}
+
+.menulinks {
+    display: flex; 
+    align-items: center;
+    margin-right: 200;
+}
+
+.mainbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sidebar {
+    position: absolute;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 50px;
+    background-color: white;
+}

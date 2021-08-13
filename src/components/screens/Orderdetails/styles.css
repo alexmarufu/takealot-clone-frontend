@@ -1,0 +1,28 @@
+.order-details-button {
+    padding: 5;
+    border: 1px solid #a8a4a4;
+}
+
+.hr {
+    border: 1px solid #dbdbdb;
+}
+
+.product-border {
+    border: 1px solid #a8a4a4;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.order-border{
+    display: flex;
+     justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+
+    .order-border{
+         flex-direction: column;
+         justify-content: space-between;
+    }
+}  

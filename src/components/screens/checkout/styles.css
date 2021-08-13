@@ -1,0 +1,37 @@
+.sideprice {
+    margin-right: 50px;
+    margin-top: 18px;
+    border: 1px solid #cac8c8;
+    box-shadow:  1px 1px #cac8c8;
+    border-radius: 2px;
+    padding: 10px;
+    
+}
+
+
+.button{
+    padding: 8px;
+    width: 250px;
+    background-color: #1c8644;
+    cursor: pointer;
+}
+
+.checkout-border {
+    display: flex; 
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media (max-width: 1000px) {
+
+   .checkout-border {
+         flex-direction: column;        
+    }
+
+   div .button{     
+        width: 100%;  
+     margin-bottom: 20px;
+    }
+}  
