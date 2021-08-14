@@ -106,7 +106,7 @@ function Checkout(props) {
           case 3:
             return <Data />;
           case 4:
-              return <Redirect to="/orders" />;
+              window.location.href = "http://localhost:3000/orders" ;
           default:
             throw new Error('Unknown step');
         }
