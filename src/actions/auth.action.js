@@ -1,4 +1,4 @@
-import { USER_LOGIN_IN_REQUEST, USER_LOGIN_IN_SUCCESS, USER_LOGIN_IN_ERROR, UPDATE_ADDRESS, USER_LOGOUT} from "../constants/index"
+import { USER_LOGIN_IN_REQUEST, USER_LOGIN_IN_SUCCESS, USER_LOGIN_IN_ERROR, UPDATE_ADDRESS, USER_LOGOUT, } from "../constants/index"
 
 import axios from '../Axios/index';
 
@@ -72,7 +72,15 @@ export const updateUser = () => (dispatch) => {
 
 
 
-
+export const logOut = () => (dispatch) => {
+    try {
+        localStorage.removeItem("logedInuser");
+        localStorage.removeItem("token");
+        dispatch({type: USER_LOGOUT});
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 
 
