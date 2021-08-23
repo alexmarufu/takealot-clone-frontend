@@ -106,7 +106,7 @@ function Checkout(props) {
           case 3:
             return <Data />;
           case 4:
-              window.location.href = "http://localhost:3000/orders" ;
+              return <Redirect to="/orders" />;
           default:
             throw new Error('Unknown step');
         }
@@ -352,7 +352,7 @@ function Checkout(props) {
 
       
     return (
-      <Header login={!auth.signedIn} >
+      <Header login={!auth.signedIn} logout={auth.signedIn} >
 
          <div className="checkout-border" style={{}}>
          <div>

@@ -47,7 +47,7 @@ function Cart(props) {
 
     return (
         
-        <Header login={!auth.signedIn} search>
+        <Header login={!auth.signedIn} logout={auth.signedIn} search>
         <Container style= {{ margin:0, alignItems: "center", justifyContent: "center" }}>
        
         <h3 style={{ textAlign: "center", color: "#474747", padding: 10 }}>Shopping Cart</h3>

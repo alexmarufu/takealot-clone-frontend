@@ -19,6 +19,8 @@ function ProductDetails(props) {
 
   const orders = useSelector(state => state.orders);
 
+  const auth = useSelector(state => state.auth);
+
   const orderDetails = orders.orderDetails;
 
 //const delivery = JSON.parse(orders.deliveryAddress);
@@ -28,7 +30,7 @@ function ProductDetails(props) {
 
     return (
          
-      <Header>
+      <Header login={!auth.signedIn} logout={auth.signedIn}>
       <Container>
       {orders.error ? <h4>error</h4> : orders.loading ? <h4>loading</h4> : orders.orderDetails ? (
         <div>

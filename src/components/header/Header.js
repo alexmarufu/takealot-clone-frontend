@@ -6,8 +6,9 @@ import { ShoppingCart, Favorite, Search, Menu } from '@material-ui/icons';
 import "./styles.css"
 import { getCart, updateCart } from '../../actions/cart.action';
 import { Paper } from '@material-ui/core';
+import { logOut } from '../../actions/auth.action';
 
-function Header({ children, login, search }) {
+function Header({ children, login, search, logout }) {
 
  const dispatch = useDispatch();
 
@@ -25,6 +26,7 @@ useEffect(() => {
  }, [cart.loading])
  
  */
+
 
   return (
     <>
@@ -54,7 +56,13 @@ useEffect(() => {
               <Link className="navName" style={{ textDecoration: "none", }} to="/register"><p style={{ color: "#202020", marginRight: 15 }}>Register</p></Link>
              </>
             )}
+             {logout && (
+     
+              <p onClick={() => dispatch(logOut())} style={{ color: "#202020", marginRight: 15 }}>Log Out</p>
+              
+             )}
         </Paper>)}
+        
         <Link to="/">
           <img className="logo2" style={{  }}
             src="https://www.bursariesportal.co.za/sites/default/files/bursaries/takealotLogo%20%281%29.png"

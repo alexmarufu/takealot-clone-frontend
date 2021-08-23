@@ -35,7 +35,7 @@ function Home(props) {
    
     return (
         
-        <Header login={!auth.signedIn} search>
+        <Header login={!auth.signedIn} logout={auth.signedIn} search>
         <img className="headerImg" src="https://food.ubc.ca/wp-content/uploads/2020/02/Save-Money-On-Groceries_UBC-Food-Services.jpg" alt="" style={{ width: "100%", height: 700 }} />
        
         <Container className="border" style={{ }}>

@@ -4,7 +4,7 @@ import { Container, Paper } from '@material-ui/core';
 import { AccountBox, LocalShippingOutlined, ReorderOutlined, CreditCardOutlined } from '@material-ui/icons'
 import { useSelector, useDispatch } from "react-redux";
 import { getOrders } from "../../../actions/order.action";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link, Redirect } from "react-router-dom/cjs/react-router-dom.min";
 import { updateCart } from "../../../actions/cart.action";
 import "./styles.css"
 
@@ -15,6 +15,7 @@ function Orders(props) {
   const cart = useSelector(state => state.cart);
 
   console.log(order)
+
 
   const dispatch = useDispatch();
 
@@ -33,10 +34,14 @@ useEffect(() => {
   dispatch(updateCart());
  }, [cart.loading])
  
- 
+
+ if(!auth.signedIn) {
+  return <Redirect to="/login" />
+}
+
 
     return (
-      <Header  login={!auth.signedIn}>
+      <Header login={!auth.signedIn} logout={auth.signedIn}>
        <Container>
      <h3 style={{ color: "#474747", padding: 10}}>Orders</h3>
 

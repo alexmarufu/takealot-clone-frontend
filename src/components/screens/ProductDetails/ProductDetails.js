@@ -31,7 +31,7 @@ function ProductDetails(props) {
     }
 
   return (
-     <Header login={!auth.signedIn} search>
+     <Header login={!auth.signedIn} logout={auth.signedIn} search>
         {product.error ? <h4>error</h4> : product.loading ? <h4>loading</h4> : product.productDetails ? (
         <div className="realmainborder" style={{ justifyContent: "center", alignItems: "center" }}>
         <div className="mainborder" style={{ }}>    
